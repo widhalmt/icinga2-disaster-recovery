@@ -1,15 +1,7 @@
 #!/bin/bash
 # script for importing automated disaster recovery tarballs for icinga 2
 # author: Thomas Widhalm <thomas.widhalm@netways.de>
-# version: 0.1
 
-# known limitations #
-# * no handling of permissions
-# * creates some temporary and backupfiles (->clean up or list)
-# * no errorhandling if director config is missing
-# * no check if scripts are already present
-# * error handling is minimalistic (better version did not work)
-# * does not handle features
 
 RDIR=$(mktemp -d --tmpdir ic2_dr.XXXXXX)
 
