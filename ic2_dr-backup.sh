@@ -1,13 +1,6 @@
 #!/bin/bash
 # script for creating automated disaster recovery tarballs for icinga 2
 # author: Thomas Widhalm <thomas.widhalm@netways.de>
-# version: 0.1
-
-# known limitations #
-# * does not check if director is even used
-# * needs .my.cnf file with password
-# * leaves temporary directories
-# * director module hast to be present at second master
 
 BUDIR=$(mktemp -d --tmpdir ic2_dr.XXXXXX)
 BUTIMESTAMP=$(date +%Y-%m-%d_%H%M)
